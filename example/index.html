@@ -1,0 +1,186 @@
+<!--
+  References:
+  https://cssreference.io
+  https://htmlreference.io
+  https://favicon.io/favicon-generator/
+-->
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elon Musk Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <img src="img/logo.png" class="logo" alt="Logo" />
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="about" class="hero">
+        <div class="container">
+          <div class="portrait-wrapper">
+            <img src="img/portrait.png" class="portrait" alt="Portrait" />
+          </div>
+          <div class="content">
+            <h1>Elon Musk</h1>
+            <h5>Entrepreneur, Engineer, Inventor</h5>
+            <p>
+              Aiming to reduce global warming through sustain-able energy
+              production and consumption. Planning to reduce the risk of human
+              extinction by making life multi-planetary and setting up a human
+              colony on Mars.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="grid">
+            <div class="card">
+              <h5 class="card-subtitle">2004 - Present</h5>
+              <h3 class="card-title">Co-founder, CEO, Product Architect</h3>
+              <p class="card-content">Tesla, Inc.</p>
+            </div>
+            <div class="card">
+              <h5 class="card-subtitle">2002 - Present</h5>
+              <h3 class="card-title">Founder, CEO, Lead Designer</h3>
+              <p class="card-content">SpaceX</p>
+            </div>
+            <div class="card">
+              <h5 class="card-subtitle">2006 - Present</h5>
+              <h3 class="card-title">Chairman</h3>
+              <p class="card-content">SolarCity</p>
+            </div>
+            <div class="card">
+              <h5 class="card-subtitle">2017 - Present</h5>
+              <h3 class="card-title">Founder</h3>
+              <p class="card-content">The Boring Company</p>
+            </div>
+            <div class="card">
+              <h5 class="card-subtitle">2016 - Present</h5>
+              <h3 class="card-title">Co-founder</h3>
+              <p class="card-content">Neuralink</p>
+            </div>
+            <div class="card">
+              <h5 class="card-subtitle">1999 - 2002</h5>
+              <h3 class="card-title">CEO</h3>
+              <p class="card-content">X.com and PayPal</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section">
+        <div class="container">
+          <h2 class="section-title">Achievements</h2>
+          <table class="table">
+            <thead>
+              <th>Title</th>
+              <th>Organization</th>
+              <th>Year</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>53rd Richest person in the world</td>
+                <td>Forbes</td>
+                <td>2018</td>
+              </tr>
+              <tr>
+                <td>21st The World's Most Powerful People</td>
+                <td>Forbes</td>
+                <td>2016</td>
+              </tr>
+              <tr>
+                <td>IEEE Honorary Membership</td>
+                <td>IEEE</td>
+                <td>2015</td>
+              </tr>
+              <tr>
+                <td>Businessperson of The Year</td>
+                <td>Fortune Magazine</td>
+                <td>2013</td>
+              </tr>
+              <tr>
+                <td>Gold Space Medal</td>
+                <td>FAI</td>
+                <td>2010</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <form method="POST" class="form">
+            <div class="form-group">
+              <label for="name"> Name <span class="required">*</span></label>
+              <input
+                name="name"
+                id="name"
+                class="form-control"
+                type="text"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email"> Email <span class="required">*</span> </label>
+              <input
+                name="email"
+                id="email"
+                class="form-control"
+                type="text"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone"> Phone </label>
+              <input
+                name="phone"
+                id="phone"
+                class="form-control"
+                type="number"
+                placeholder="Enter phone"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">
+                Message <span class="required">*</span>
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Enter message"
+                requireds
+              >
+              </textarea>
+            </div>
+            <button type="submit" class="button">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright © 2022 Elon Musk. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

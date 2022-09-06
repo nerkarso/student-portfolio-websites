@@ -1,0 +1,320 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui;
+  margin: 0;
+  background-color: #e7fcfb;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-inline: 16px;
+}
+
+.navbar {
+  /* height: 64px; */
+  /* padding-inline: 16px; */
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #147979;
+  background-color: #e7fcfb;
+  z-index: 40;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .navbar .container {
+    flex-direction: row;
+  }
+}
+
+.navbar .logo {
+  width: 48px;
+}
+
+.nav-wrapper {
+  width: calc(100vw - 32px);
+  height: 100%;
+  overflow-x: auto;
+}
+
+@media (min-width: 1024px) {
+  .nav-wrapper {
+    width: auto;
+  }
+}
+
+.nav {
+  display: flex;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    gap: 16px;
+  }
+}
+
+.nav a {
+  padding: 8px;
+  font-size: 18px;
+  color: #188b8b;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #020707;
+}
+
+.main {
+  padding-top: 64px;
+}
+
+.hero,
+.section {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  scroll-margin-top: 80px;
+}
+
+.hero .container {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .hero .container {
+    flex-direction: row;
+  }
+}
+
+.portrait-wrapper {
+  height: 240px;
+  width: 240px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.portrait {
+  position: absolute;
+  height: 160%;
+  width: 100%;
+  top: -60%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.content h5 {
+  color: #147979;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.content p {
+  color: black;
+  margin-top: 16px;
+  font-size: 1.15rem;
+}
+
+/* .section 
+  margin-top: 48px;
+  margin-bottom: 48px;
+  scroll-margin-top: 80px;
+} */
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-style: oblique;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 32px;
+  border-radius: 8px;
+}
+.table td,
+.table th {
+  border: 1px solid #188b8b;
+  padding: 8px;
+}
+.table th {
+  text-align: left;
+  color: #147979;
+}
+.table td {
+  width: 33%;
+}
+
+.grid {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid #147979;
+  padding: 16px;
+}
+
+.card-subtitle {
+  font-size: 0.75rem;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.card-title {
+  color: #188b8b;
+  font-size: 1.15rem;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.card-content {
+  font-size: 1rem;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #188b8b;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+}
+
+.button {
+  background-color: #147979;
+  border-radius: 6px;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  text-transform: uppercase;
+  font: inherit;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  max-width: 320px;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.form-control {
+  border: 1px solid #147979;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 400;
+}
+.form-control:focus {
+  border-color: #88dddd;
+  outline: none;
+}
+
+.rotate {
+  animation: rotate 5s ease infinite;
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rainbow-colors {
+  animation: rainbow 5s ease infinite;
+}
+
+@keyframes rainbow {
+  25% {
+    color: rgb(151, 211, 208);
+  }
+  50% {
+    color: #1ec4c4;
+  }
+  75% {
+    color: #1b8b8b;
+  }
+  100% {
+    color: #000;
+  }
+}
